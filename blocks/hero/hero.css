@@ -1,3 +1,5 @@
+/* block specific CSS goes here */
+
 main .hero-container > div {
   max-width: unset;
 }
@@ -5,30 +7,263 @@ main .hero-container > div {
 main .hero-container {
   padding: 0;
 }
-
-.hero {
+  
+main .hero {
   position: relative;
-  padding: 32px;
-  min-height: 300px;
+  padding: 32px 80px;
+  min-height: 650px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
+main .hero h1 {
+  font-size: 45px;
+  max-width: 525px;
+  margin-left: 11%;
+  margin-top: 8%;
   margin-right: auto;
-  color: white;
+  color: #ffffff;
 }
 
-.hero picture {
+main .hero h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 525px;
+  margin-left: 11%;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+main .hero h3 {
+  border-color: #fff;
+  background-color: #fff;
+  color: #e68636;
+  padding: 20px 32px;
+  margin-left: 11%;
+  font-size: 1rem;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+  cursor: pointer;
+}
+
+main .hero picture {
   position: absolute;
   z-index: -1;
-  inset: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   object-fit: cover;
   box-sizing: border-box;
 }
 
-.hero img {
+main .hero img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 20px 70px;
+  border: 1px solid #888;
+  width: 33%;
+  border-radius: 12px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-request-form {
+
+}
+.card-request-form .card-request-h2 {
+  color: #e68636;
+  font-size: 2.488rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.card-request-form .card-request-msg {
+  color: #000000;
+  font-size: 20px;
+  padding: 40px 40px 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.card-request-form .field-label {
+  position: relative;
+  z-index: 1;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: .8rem;
+  text-transform: uppercase;
+  display: block;
+}
+.card-request-form .field-text {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 54px;
+  margin-bottom: 0;
+  border-radius: 3px;
+  color: #000;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+.card-request-form .form-screen-2 {
+  display: none;
+}
+.card-request-form .form-screen-3 {
+  display: none;
+  text-align: center;
+}
+
+
+.card-request-form .checkbox-block {
+  border-radius: 8px;
+  background-color: #f4f4f5;
+  padding: 20px;
+  margin: 20px 0;
+}
+.card-request-form .checkbox-block .field-label {
+  display: inline;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.card-request-form .checkbox-block .field-checkbox {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+
+
+.card-request-form .back-btn {
+  color: #71717a;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card-request-form .form-button {
+  display: flex;
+  margin: 15px 0;
+  flex: 0 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e68636;
+  border-radius: 3px;
+  background-color: #e68636;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  font-size: .64rem;
+  width: min-content;
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+  main .hero {
+    padding: 32px 20px;
+    min-height: 500px;
+  }
+  main .hero h1 {
+    font-size: 30px;
+    max-width: 40%;
+    margin-left: 2%;
+  }
+  main .hero h2 {
+    font-size: 20px;
+    max-width: 40%;
+    margin-left: 2%;
+  }
+  main .hero h3 {
+    padding: 15px 20px;
+    font-size: 15px;
+    margin-left: 2%;
+  }
+}
+@media (max-width: 900px) { 
+  main .hero {
+    padding: 32px 20px;
+    min-height: 400px;
+  }
+  main .hero picture {
+    left: -100px;
+  }
+  .modal-content {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) { 
+  main .hero {
+    padding: 10px 20px;
+    min-height: 300px;
+    background-color: #e76816;
+  }
+  main .hero picture {
+    display: none;
+  }
+  main .hero h1 {
+    font-size: 22px;
+    max-width: 100%;
+    margin-left: 10px;
+  }
+  main .hero h2 {
+    font-size: 20px;
+    max-width: 100%;
+    margin-left: 10px;
+  }
+  main .hero h3 {
+    padding: 15px 20px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .modal-content {
+    width: 80%;
+  }
 }
