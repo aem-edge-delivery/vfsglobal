@@ -1,21 +1,23 @@
 footer {
-  padding: 2rem;
-  background-color: #004a7f;
-  color: #ffffff;
+  padding: 4rem 2rem;
+  background-color: #003060;
+  color: #929497;
   font-size: var(--body-font-size-s);
 }
-
 footer .footer {
   max-width: 1200px;
   margin: auto;
 }
-
 footer .footer p {
   margin: 0;
 }
-
+footer .footer p:nth-child(1) {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 footer .footer a {
-  color: #ffffff;
+  color: #929497;
   text-decoration: none;
   outline: none;
 }
