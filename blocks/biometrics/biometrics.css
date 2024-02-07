@@ -1,0 +1,115 @@
+
+
+.biometrics-container {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 10px 0 !important;
+}
+.biometrics-wrapper {
+  width: 100%;
+}
+
+.biometrics {
+  background-color: #DBE0E7;
+  padding: 3%;
+  border-radius: 20px;
+}
+  
+  .biometrics .biometrics-card-image {
+    width: 10%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .biometrics .biometrics-card-body {
+    width: 90%;
+    color: #52525b;
+    font-size: 18px;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    display: inline-block;
+  }
+
+
+.biometrics .biometrics-card-image img {
+  width: auto;
+  height: 78px;
+  margin-top: 10px;
+}
+
+  .biometrics h2 {
+    color: #283C58;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    text-transform: none;
+    white-space: normal;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: initial;
+    padding: 0;
+  }
+  .biometrics p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #0A0A0A;
+  }
+  
+  .biometrics a.button {
+    background-color: #dd0100;
+    color: #ffffff;
+    border-style: solid;
+    border: 1px solid #dd0100;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  
+  .biometrics > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  
+  .biometrics > ul > li {
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+
+  
+  .biometrics > ul > li img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  @media (max-width: 1300px) {
+    .biometrics-container {
+      padding: 0 25px !important;
+    }
+  }
+  @media (max-width: 900px) {
+    .biometrics h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 600px) {
+    .biometrics > ul > li { 
+      width: 100%;
+      display: inline-block;
+      padding: 1%;
+      box-sizing: border-box;
+    }
+  }

@@ -10,8 +10,8 @@ main .hero-container {
   
 main .hero {
   position: relative;
-  padding: 50px 13%;
-  min-height: 525px;
+  padding: 50px 10%;
+  min-height: 550px;
 }
 
 main .hero h1 {
@@ -20,14 +20,14 @@ main .hero h1 {
   margin-right: auto;
   color: #283c58;
   margin-top: 15%;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 main .hero h1 strong {
   font-weight: 400;
 }
 main .hero h2 {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 30px;
   font-weight: 400;
   max-width: 525px;
   color: #333333;
@@ -47,13 +47,14 @@ main .hero h3 {
   font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
+  margin-top: 15px;
 }
 
 main .hero picture {
   z-index: 1;
   position: relative;
   float: right;
-  width: 38%;
+  width: 34%;
   margin-top: -10%;
 }
 

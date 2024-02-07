@@ -15,14 +15,14 @@
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
-  --light-color: #eee;
+  --light-color: #F6F9FE;
   --dark-color: #ccc;
-  --text-color: black;
+  --text-color: #0A0A0A;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'Adobe Clean', roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: 'Adobe Clean', 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -67,6 +67,9 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body.appear {
@@ -198,7 +201,7 @@ main .section {
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
   }
 }

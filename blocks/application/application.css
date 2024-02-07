@@ -1,0 +1,124 @@
+
+
+.application-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+  }
+  .application-wrapper {
+    width: 100%;
+  }
+  
+  .application {
+    background-color: #003060;
+    padding: 3%;
+    border-radius: 20px;
+  }
+    
+    .application .application-card-image {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .application .application-card-body { 
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 500;
+      font-size: 25px;
+      text-align: left;
+      display: inline-block;
+    }
+  
+    .application ul li:nth-child(2) .application-card-body {
+        width: 50%;
+        padding: 3%;
+        box-sizing: border-box;
+        background-color: #4373B9;
+        border-radius: 18px;
+        margin-top: 4%;
+    }
+
+    .application .application-card-body img {
+        width: 70%;
+        object-fit: contain;
+      }
+
+  
+  .application .application-card-image img {
+    width: 100%;
+    height: auto;
+    border: 0.1px solid #4373B9;
+    border-radius: 30px;
+
+  }
+  
+    .application h2 {
+      color: #ffffff;
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      text-transform: none;
+      white-space: normal;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: initial;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .application p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+    
+    .application a.button {
+      background-color: #dd0100;
+      color: #ffffff;
+      border-style: solid;
+      border: 1px solid #dd0100;
+      text-align: center;
+      text-transform: uppercase;
+      width: fit-content;
+      cursor: pointer;
+      padding: 10px 25px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 25px;
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+    
+    .application > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .application > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }    
+    
+    @media (max-width: 1300px) {
+      .application-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .application h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .application > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }

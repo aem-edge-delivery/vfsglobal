@@ -1,0 +1,111 @@
+
+
+.assistant-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+  }
+  .assistant-wrapper {
+    width: 100%;
+  }
+  
+  .assistant {
+    background-color: #003060;
+    color: #ffffff;
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  .assistant .assistant-card-body {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  
+  .assistant .assistant-card-image img {
+    width: auto;
+    height: 78px;
+    margin-top: 10px;
+  }
+  
+    .assistant h2 {
+      color: #ffffff;
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      text-transform: none;
+      white-space: normal;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: initial;
+      padding: 0;
+    }
+    .assistant p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+    
+    .assistant a.button {
+      background-color: #dd0100;
+      color: #ffffff;
+      border-style: solid;
+      border: 1px solid #dd0100;
+      text-align: center;
+      text-transform: uppercase;
+      width: fit-content;
+      cursor: pointer;
+      padding: 10px 25px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 25px;
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+    
+    .assistant > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .assistant > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }
+  
+    
+    .assistant > ul > li img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    
+    
+    @media (max-width: 1300px) {
+      .assistant-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .assistant h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .assistant > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }

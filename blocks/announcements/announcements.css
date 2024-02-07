@@ -1,0 +1,281 @@
+
+.announcements-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+  }
+  .announcements-wrapper {
+    background-color: #F6F9FE;
+    width: 100%;
+    max-width: initial !important;
+  }
+  .announcements > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .announcements > ul > li {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    display: grid;
+  }
+  
+  .announcements .announcements-card-body {
+    margin: 0;
+    color: #254D80;
+    font-size: 18px;
+    font-weight: 500;
+    font-size: 25px;
+    width: 100%;
+    display: inline-block;
+    padding-left: 7%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  
+  .announcements .announcements-card-body table:nth-child(1) {
+    width: 55%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding: 50px 0;
+    text-align: left;
+  }
+  .announcements .announcements-card-body table:nth-child(2) {
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: right;
+    background-color: #003060;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+    overflow: auto;
+  }
+  
+  .announcements .announcements-card-body table:nth-child(2) tr {
+    width: 100%;
+    display: block;
+    color: #fff;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr td {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr td strong {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 49, 35);
+    height: auto;
+    line-height: normal;
+    text-transform: none;
+    white-space: normal;
+    font-style: italic;
+    padding: 10px 15px 10px 10px;
+    -webkit-box-decoration-break: clone;
+    transition: background-color 0.3s cubic-bezier(0.365, 0.005, 0.355, 1) 0s;
+  }
+  
+  .announcements .announcements-card-image {
+    line-height: 0;
+  }
+  
+  .announcements > ul > li img {
+    object-fit: cover;
+  }
+  
+  
+  .announcements .announcements-card-body h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: initial;
+    text-align: left;
+    text-transform: initial;
+    color: #465b77;
+    margin-top: 0;
+  }
+  
+  .announcements .announcements-card-body .pre-title {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #203240;
+    color: #fff;
+    display: block;
+    max-width: 100%;
+    height: 1.6em;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 0 10px;
+    width: fit-content;
+    margin-bottom: 15px;
+  }
+  .announcements .announcements-card-body .title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+    color: #272727;
+    margin-bottom: 25px;
+  }
+  .announcements .announcements-card-body .text {
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+    color: #272727;
+  }
+  
+  .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) {
+    width: 100%;
+  }
+  .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(2) {
+    width: 70%;
+    padding: 0 5%;
+    vertical-align: top;
+  }
+  
+
+  .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) #im-a-resident-of {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: left;
+    color: #254D80;
+    display: inline-block;
+    padding-right: 15px;
+  }
+  .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) p {
+    display: inline-block;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: normal;
+    color: #254D80;
+    margin: 10px 0;
+  }
+  .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) p img {
+    width: 261px;
+    vertical-align: middle;
+  }
+
+
+
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(1) #latest-announcements {
+    color: #ffffff;
+    width: auto;
+    display: inline-block;
+    padding-right: 15px;
+    width: 250px;
+    margin-top: 0;
+    font-size: 28px;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(1) p {
+    color: #ffffff;
+    width: auto;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 2%;
+    cursor: pointer;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(1) p img {
+    width: 32px;
+    height: auto;
+  }
+
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) {
+    width: 200%;
+    min-width: 1000px;
+    text-align: left;
+    display: block;
+    position: relative;
+    transition: 1s;
+    
+  }
+ 
+
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) td {
+    width: 250px;
+    padding: 20px;
+    display: inline-block;
+    color: #0A0A0A;
+    background-color: #ffffff;
+    border-radius: 18px;
+    margin-right: 15px;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) h3 {
+    color: #003060;
+    font-size: 21px;
+    font-family: "Adobe Clean Bold";
+    margin-top: 0;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) p {
+    font-size: 16px;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) h4 {
+    color: #808184;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(3) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .announcements .announcements-card-body table:nth-child(2) tr:nth-child(3) a {
+    background-color: #dd0100;
+    color: #ffffff;
+    border-style: solid;
+    border: 1px solid #dd0100;
+    text-align: center;
+    text-transform: uppercase;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 25px;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+
+
+  
+  @media (max-width: 600px) { 
+  
+  
+    .announcements .announcements-card-body .announcements-card-body table {
+      display: block;
+    }
+    .announcements .announcements-card-body table:nth-child(1) {
+      width: 100%;
+    }
+    .announcements .announcements-card-body table:nth-child(2) {
+      width: 100%;
+    }
+    .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+    .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(2) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  

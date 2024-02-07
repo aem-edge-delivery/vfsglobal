@@ -1,0 +1,124 @@
+
+
+.faq-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+  }
+  .faq-wrapper {
+    width: 100%;
+  }
+  
+  .faq {
+    color: #003060;
+    padding: 3%;
+    border-radius: 20px;
+  }
+
+  .faq .faq-card-body {
+    width: 100%;
+    color: #003060;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+  }
+  .faq .faq-card-body h3 {
+    font-size: 21px;
+    display: inline-block;
+    float: left;
+  }
+  .faq .faq-card-body p {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+  }
+  .faq .faq-card-body picture {
+    vertical-align: sub;
+  }
+  .faq .faq-card-body img {
+    vertical-align: bottom;
+  }
+  
+  .faq .faq-card-body:nth-child(2) {
+    display: none;
+  }
+
+    .faq h2 {
+      color: #283C58;
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      text-transform: none;
+      white-space: normal;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: initial;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .faq p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+    
+    .faq-container .button-container a.button {
+        background-color: #dd0100;
+        color: #ffffff;
+        border-style: solid;
+        border: 1px solid #dd0100;
+        text-align: center;
+        text-transform: uppercase;
+        width: fit-content;
+        cursor: pointer;
+        padding: 10px 25px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .faq > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .faq > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }
+  
+    
+    .faq > ul > li img {
+      width: 16px;
+      object-fit: cover;
+    }
+    
+    
+    
+    @media (max-width: 1300px) {
+      .faq-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .faq h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .faq > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }

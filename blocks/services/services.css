@@ -1,0 +1,132 @@
+
+.services-container {
+  text-align: center;
+  display: grid;
+}
+
+.services-container h2 {
+  color: #283C58;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 5%;
+}
+.services-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #254D80;
+}
+.services-container h4 {
+  color: #F2000F;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.services-container p.button-container {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.services-container a.button {
+  border-style: solid;
+  border: none;
+  background-color: transparent;
+  color: #254D80;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.services > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.services > ul > li {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.services .services-card-body {
+  margin: 0;
+  padding: 16px;
+  color: #52525b;
+  border-radius: 0 0 18px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  text-align: left;
+  position: relative;
+  min-height: 210px;
+}
+
+.services .services-card-image {
+  line-height: 0;
+}
+
+.services .services-card-body h2 {
+  margin-top: 0;
+  color: #003060;
+  font-size: 21px;
+}
+
+.services > ul > li img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+
+
+@media (max-width: 1300px) {
+  .services-container {
+    padding: 0 25px !important;
+  }
+  .services > ul { 
+    display: inline-block;
+  }
+  .services > ul > li { 
+    width: 33.33%;
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 900px) {
+  .services-container h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .services > ul > li { 
+    width: 100%;
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,141 @@
+
+
+.help-container {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0 !important;
+  }
+  .help-wrapper {
+    width: 100%;
+  }
+  
+  .help {
+    color: #003060;
+    padding: 0;
+    border-radius: 20px;
+    background-color: #F6F9FE;
+    display: grid;
+  }
+
+  .help h2 {
+    color: #283C58;
+    height: auto;
+    line-height: normal;
+    margin: 0;
+    text-transform: none;
+    white-space: normal;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: initial;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .help p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+    color: #0A0A0A;
+  }
+
+  .help .help-card-body {
+    color: #003060;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    padding: 3%;
+    box-sizing: border-box;
+  }
+  .help .help-card-body h3 {
+    font-size: 30px;
+    display: block;
+  }
+  .help .help-card-body p {
+    display: block;
+    cursor: pointer;
+    max-width: 400px;
+  }
+  .help .help-card-body picture {
+    vertical-align: sub;
+  }
+  .help .help-card-body img {
+    vertical-align: bottom;
+  }
+
+  .help .help-card-body:nth-child(1) {
+    width: 65%;
+    float: left;
+  }
+  .help .help-card-body:nth-child(2) {
+    width: 35%;
+    float: right;
+    background-color: #FFE9EB;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .help .help-card-body:nth-child(2) p {
+    display: block;
+    color: #FF4B00;
+    text-decoration: underline;
+    font-size: 17px;
+  }
+    
+    
+    .help-container .button-container a.button {
+        background-color: #dd0100;
+        color: #0A0A0A;
+        border-style: solid;
+        border: 1px solid #dd0100;
+        text-align: center;
+        text-transform: uppercase;
+        width: fit-content;
+        cursor: pointer;
+        padding: 10px 25px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .help > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .help > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }
+  
+    
+    .help > ul > li img {
+      width: 16px;
+      object-fit: cover;
+    }
+    
+    
+    
+    @media (max-width: 1300px) {
+      .help-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .help h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .help > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }
