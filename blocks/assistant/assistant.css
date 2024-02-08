@@ -26,6 +26,27 @@
     text-align: center;
   }
   
+  .assistant .assistant-card-body form {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .assistant .assistant-card-body form input {
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+  .assistant .assistant-card-body form button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 10px;
+    outline: none;
+  }
+
+
   
   .assistant .assistant-card-image img {
     width: auto;

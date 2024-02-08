@@ -7,8 +7,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'assistant-card-image';
-      else div.className = 'assistant-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'something-else-card-image';
+      else div.className = 'something-else-card-body';
     });
     ul.append(li);
   });
@@ -16,12 +16,3 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
-
-
-//assistant-card-body
-
-let form = document.createElement("form");
-form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search"><button type="button" class="search-btn">Go</button>';
-
-
-document.getElementById("ask-your-personal-germany-visa-assistant").parentElement.appendChild(form);

@@ -1,0 +1,123 @@
+
+.something-else-container {
+    text-align: center;
+    display: grid;
+    margin-top: -120px;
+  }
+  
+  .something-else-container h2 {
+    color: #3d577c;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 25px;
+  }
+  .something-else-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #254D80;
+  }
+  .something-else-container h4 {
+    color: #F2000F;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .something-else-container p.button-container {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .something-else-container a.button {
+    border: none;
+    background-color: transparent;
+    color: #FF4B00;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .something-else > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #254D80;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .something-else > ul > li {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+
+  
+  .something-else .something-else-card-body {
+    margin: 0;
+    padding: 20px 50px;
+    color: #52525b;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+  .something-else .something-else-card-body:nth-child(1) {
+    border-right: 1px solid #254D80;
+  }
+  
+  .something-else .something-else-card-image {
+    line-height: 0;
+    text-align: left;
+  }
+  
+  .something-else .something-else-card-body h2 {
+    margin-top: 0;
+    color: #3d577c;
+    font-size: 30px;
+  }
+  
+  .something-else > ul > li img {
+    width: auto;
+    height: 164px;
+    object-fit: cover;
+  }
+  
+  
+  
+  @media (max-width: 1300px) {
+
+  }
+  @media (max-width: 900px) {
+    .something-else-container h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 600px) {
+    .something-else > ul > li { 
+      width: 100%;
+      display: inline-block;
+      padding: 1%;
+      box-sizing: border-box;
+    }
+  }

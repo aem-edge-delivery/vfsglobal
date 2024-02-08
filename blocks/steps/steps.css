@@ -1,0 +1,129 @@
+
+.steps-container {
+    text-align: center;
+    display: grid;
+    padding:64px 32px 120px !important;
+  }
+  
+  .steps-container h2 {
+    color: #283C58;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 50px;
+  }
+  .steps-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #254D80;
+  }
+  .steps-container h4 {
+    color: #F2000F;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .steps-container p.button-container {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+  
+  .steps-container a.button {
+    border: none;
+    background-color: transparent;
+    color: #254D80;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .steps > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .steps > ul > li {
+    display: inline-block;
+    width: 25%;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .steps > ul > li:nth-child(1), 
+  .steps > ul > li:nth-child(2),
+  .steps > ul > li:nth-child(3) {
+    border-right:3px solid #ecf1fa;
+  }
+
+
+  
+  .steps .steps-card-body {
+    margin: 0;
+    padding: 0;
+    color: #52525b;
+    border-radius: 0 0 18px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    text-align: left;
+    position: relative;
+    min-height: 130px;
+  }
+  
+  .steps .steps-card-image {
+    line-height: 0;
+    text-align: left;
+  }
+  
+  .steps .steps-card-body h2 {
+    margin-top: 0;
+    color: #003060;
+    font-size: 21px;
+  }
+  
+  .steps > ul > li img {
+    width: auto;
+    height: 164px;
+    object-fit: cover;
+  }
+  
+  
+  
+  @media (max-width: 1300px) {
+
+  }
+  @media (max-width: 900px) {
+    .steps-container h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 600px) {
+    .steps > ul > li { 
+      width: 100%;
+      display: inline-block;
+      padding: 1%;
+      box-sizing: border-box;
+    }
+  }

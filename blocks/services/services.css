@@ -104,18 +104,6 @@
 
 
 @media (max-width: 1300px) {
-  .services-container {
-    padding: 0 25px !important;
-  }
-  .services > ul { 
-    display: inline-block;
-  }
-  .services > ul > li { 
-    width: 33.33%;
-    display: inline-block;
-    padding: 1%;
-    box-sizing: border-box;
-  }
 }
 @media (max-width: 900px) {
   .services-container h2 {
