@@ -16,6 +16,10 @@
     border-radius: 20px;
   }
 
+  .banners img {
+    border-radius: 20px;
+  }
+
   .banners .banners-card-body {
     width: 100%;
     color: #ffffff;
