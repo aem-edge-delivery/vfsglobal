@@ -138,7 +138,7 @@ setTimeout(() => {
     document.getElementsByTagName("header")[0].getElementsByTagName("img")[0].style.display = "block";
     document.getElementsByTagName("header")[0].getElementsByTagName("img")[1].style.display = "none";
   }
-}, 500);
+}, 1000);
 
 /**
  * Loads everything that happens a lot later,

@@ -75,6 +75,12 @@
     width: 65%;
     float: left;
   }
+  .tourist-container .tourist-card-body:nth-child(1) p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: initial;
+  }
   .tourist-container .tourist-card-body:nth-child(2) {
     width: 35%;
     float: right;

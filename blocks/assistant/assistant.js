@@ -22,7 +22,7 @@ export default function decorate(block) {
 
 let form = document.createElement("form");
 form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search" class="searchbox" autocomplete="off"><button type="button" class="search-btn">Go</button>';
-document.getElementById("ask-your-personal-germany-visa-assistant").parentElement.appendChild(form);
+document.getElementsByClassName("assistant")[0].getElementsByTagName("h2")[0].parentElement.appendChild(form);
 
 
 
