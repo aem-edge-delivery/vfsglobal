@@ -89,7 +89,7 @@ function handleAnchorClick(event) {
   event = event || window.event;
 
   if (findParentByTagName(event.target || event.srcElement, "A")) {
-      event.preventDefault();
+      //event.preventDefault();
       console.log("An anchor was clicked!", event.target);
       let targetClass = event.target.getAttribute("class");
 
