@@ -1,0 +1,39 @@
+{
+    "assistant": {
+        "questions": [
+            {
+                "question": "What is the process to apply for a visa?",
+                "answer": "Depending on the country you wish to visit, you can find visa process related information by clicking here and selecting the country you are applying from and the country you wish to visit using the dropdown. This will lead you to our country-specific website, which will have all the details."
+            },
+            {
+                "question": "How do I contact VFS Global for assistance?",
+                "answer": "To help applicants, we have dedicated helpline teams to assist on processes related to respective countries. To contact these teams, please click here and select the country you are travelling from and travelling to using the dropdown. This will lead you to our country-specific website page, which will have details about our dedicated helpline teams (applicable where this service is offered by VFS Global) to assist applicants under the “Contact us” section at the bottom of the page."
+            },
+            {
+                "question": "How can I track the status of my application?",
+                "answer": "If this service is available for a specific client government, applicants can get the information on the “Track your application” page by visiting the country-specific website by selecting select the country you are travelling from and travelling to using the dropdown here. Very often though, you may see a message saying “Under process” since these decisions are taken by the respective Embassies/Consulates, and not VFS Global."
+            },
+            {
+                "question": "What should I do to apply for a refund?",
+                "answer": "All refunds must be applied online. Merely applying for a refund does not guarantee one. The “Refund Policy” section is available on select country-specific websites, which can be accessed by selecting the applying country and visiting country by clicking here. Applicants can refer to the eligibility criteria detailed in the “Refund policy” and apply for a refund by clicking the “Refund Request Form” link. Please note that this option maybe available for select countries only."
+            },
+            {
+                "question": "How can I withdraw my application?",
+                "answer": "Applicants who wish to withdraw their application/passport, can visit the country-specific website by clicking here and selecting the country you are applying from and the country you wish to visit using the dropdown. Alternatively, they can refer to the helpline section under the “Contact us” page after visiting thecountry-specific website . Please note that this option maybe available for select countries only."
+            },
+            {
+                "question": "When will I get my passport back?",
+                "answer": "We understand that applicants need an update on their passports submitted at our Visa Application Centre. Our local teams will reach out to you with an update on the status of your visa application and return of passport after receiving the instructions from the respective Embassy/Consulate. You will receive an intimation on your passport basis the option selected for Self-pick or Courier. VFS Global is guided by the respective client governments to retain the document for a specified number of days post which it is returned to the respective Embassy/Consulates. For more details, you can refer to the country-specific website pages."
+            },
+            {
+                "question": "Can we avail VFS Global’s services in my location?",
+                "answer": "This website will guide you on the various services we extend in respective countries and for specific client governments. Each service will have an option to know if the services are applicable in your country and city. For details, please visit our country-specific websites by selecting the applying country and the visiting country by clicking here. However, all services are subject to change without notice, based on instructions of client governments."
+            },
+            {
+                "question": "I am receiving an error message while booking an appointment. What should I do?",
+                "answer": "During the appointment booking process, our website shares adequate prompts to assist you with most error messages you may encounter. You are requested to have good internet connectivity and should you have to retry, please attempt on a single device after closing all your browser windows, disconnecting from VPN, and clearing your cache memory. At certain times due to very high demand, you may need to wait a while and retry. In case the error persists, you can reach out to our dedicated helpline teams (applicable where this service is offered by VFS Global), details of which are available under the “Contact us” section of our country-specific website pages."
+            }
+
+        ]
+    }
+}  

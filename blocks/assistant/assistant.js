@@ -21,7 +21,96 @@ export default function decorate(block) {
 //assistant-card-body
 
 let form = document.createElement("form");
-form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search"><button type="button" class="search-btn">Go</button>';
-
-
+form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search" class="searchbox" autocomplete="off"><button type="button" class="search-btn">Go</button>';
 document.getElementById("ask-your-personal-germany-visa-assistant").parentElement.appendChild(form);
+
+
+
+document.getElementsByClassName("searchbox")[0].addEventListener("keyup", function(){
+  console.log("in loadData");
+
+  let form = document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0];
+
+  if(form.getElementsByClassName("questions-list").length==0) {
+    form.insertAdjacentHTML("beforeend", "<div class='questions-list'></div>");
+  }
+
+  if(form.getElementsByClassName("answers-list").length==0) {
+    form.insertAdjacentHTML("beforeend", "<div class='answers-list'></div>");
+  }
+
+  document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].innerHTML = '';
+  document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].style.display = 'block';
+  document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("answers-list")[0].innerHTML = '';
+  document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("answers-list")[0].style.display = 'none';
+
+  if(this.value.length>=3) {
+    console.log("value more than equal to 3", this.value.length);
+
+    var settings = {
+      "method": "GET",
+      "timeout": 0,
+      "headers": {
+        "Cookie": "affinity=\"134ec73574ac85a9\"; cq-authoring-mode=TOUCH"
+      }
+    };
+
+    fetch("/blocks/assistant/data.json", settings)
+    .then(response => response.json())
+    .then(body => {
+      console.log("body: ", body);
+      body.assistant.questions.forEach((item) => {
+
+        var targetElm = document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0];
+        console.log("searchBoxVal ", this.value);
+
+        if(item.question.toLowerCase().includes(this.value.toLowerCase())) {
+          console.log("this question includes ", item.question);
+          targetElm.insertAdjacentHTML("beforeend", "<a class='questions-item' data-answer='"+item.answer+"'>"+item.question+"</a>");
+        }
+
+      });
+    });
+  } else {
+    document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].style.display = 'none';
+  }
+
+});
+
+function findParentByTagName(element, tagName) {
+  var parent = element;
+  while (parent !== null && parent.tagName !== tagName.toUpperCase()) {
+      parent = parent.parentNode;
+  }
+  return parent;
+}
+
+function handleAnchorClick(event) {
+  event = event || window.event;
+
+  if (findParentByTagName(event.target || event.srcElement, "A")) {
+      event.preventDefault();
+      console.log("An anchor was clicked!", event.target);
+      let targetClass = event.target.getAttribute("class");
+
+      if(targetClass=='questions-item'){
+        let targetText =  event.target.text;
+        let targetDataAnswer =  event.target.getAttribute("data-answer");
+        console.log("targetDataAnswer: ", targetDataAnswer);
+        
+        document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].innerHTML = '';
+        document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].style.display = 'none';
+        document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByTagName("input")[0].value=targetText;
+
+        document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("answers-list")[0].innerHTML = '';
+        document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("answers-list")[0].style.display = 'block';
+      
+        var targetElm = document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("answers-list")[0];
+        targetElm.innerHTML=targetDataAnswer;
+      }
+
+  }
+}
+
+document.documentElement.addEventListener("click", handleAnchorClick, false);
+

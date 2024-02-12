@@ -29,6 +29,7 @@
   .assistant .assistant-card-body form {
     width: 50%;
     margin: 20px auto;
+    position: relative;
   }
   .assistant .assistant-card-body form input {
     width: 80%;
@@ -45,6 +46,38 @@
     margin-left: 10px;
     outline: none;
   }
+  .assistant .assistant-card-body form .questions-list {
+    width: 78%;
+    background-color: #eaeaea;
+    color: #012a54;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: -10px;
+    outline: none;
+    text-align: left;
+    position: absolute;
+    z-index: 11;
+  }
+  .assistant .assistant-card-body form .questions-list .questions-item {
+    display: block;
+    cursor: pointer;
+  }
+
+  .assistant .assistant-card-body form .answers-list {
+    width: 78%;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-top: -10px;
+    outline: none;
+    text-align: left;
+  }
+
 
 
   
