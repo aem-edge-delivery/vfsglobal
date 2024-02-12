@@ -26,9 +26,20 @@ function buildHeroBlock(main) {
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && h2 && h3 && picture && (h1.compareDocumentPosition(picture) & h2.compareDocumentPosition(picture) & h3.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
-    const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1, h2, h3] }));
-    main.prepend(section);
+    
+    if (window.location.href.indexOf("/global") > -1) {
+      const att = document.createAttribute("class");
+      att.value = "global";
+      const section = document.createElement('div');
+      section.setAttributeNode(att);
+      section.append(buildBlock('hero', { elems: [picture, h2, h1] }));
+      main.prepend(section);
+    } else {
+      const section = document.createElement('div');
+      section.append(buildBlock('hero', { elems: [picture, h1, h2, h3] }));
+      main.prepend(section);
+    }
+
   }
 }
 
@@ -117,6 +128,17 @@ async function loadLazy(doc) {
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
 }
+
+
+setTimeout(() => {
+  if (window.location.href.indexOf("/global") > -1) {
+    document.getElementsByTagName("header")[0].getElementsByTagName("img")[0].style.display = "none";
+    document.getElementsByTagName("header")[0].getElementsByTagName("img")[1].style.display = "block";
+  } else {
+    document.getElementsByTagName("header")[0].getElementsByTagName("img")[0].style.display = "block";
+    document.getElementsByTagName("header")[0].getElementsByTagName("img")[1].style.display = "none";
+  }
+}, 500);
 
 /**
  * Loads everything that happens a lot later,

@@ -1,0 +1,132 @@
+
+
+.banners-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+  }
+  .banners-wrapper {
+    width: 100%;
+  }
+  
+  .banners {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0;
+    border-radius: 20px;
+  }
+
+  .banners .banners-card-body {
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .banners .banners-card-body form {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .banners .banners-card-body form input {
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+  .banners .banners-card-body form button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 10px;
+    outline: none;
+  }
+
+
+  
+  .banners .banners-card-image img {
+    width: auto;
+    height: 78px;
+    margin-top: 10px;
+  }
+  
+    .banners h2 {
+      color: #ffffff;
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      text-transform: none;
+      white-space: normal;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: initial;
+      padding: 0;
+    }
+    .banners p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+    
+    .banners a.button {
+      background-color: #dd0100;
+      color: #ffffff;
+      border-style: solid;
+      border: 1px solid #dd0100;
+      text-align: center;
+      text-transform: uppercase;
+      width: fit-content;
+      cursor: pointer;
+      padding: 10px 25px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 25px;
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+    
+    .banners > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    
+    .banners > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }
+  
+    
+    .banners > ul > li img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    
+    
+    @media (max-width: 1300px) {
+      .banners-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .banners h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .banners > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }

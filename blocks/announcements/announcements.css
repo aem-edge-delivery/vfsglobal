@@ -134,6 +134,28 @@
     text-transform: uppercase;
     color: #272727;
   }
+  .announcements .announcements-card-body .button-container {
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: auto;
+    float: right;
+    margin-top: 10px;
+  }
+  .announcements .announcements-card-body .button {
+    font-size: 14px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    text-transform: capitalize;
+    color: #003060;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    vertical-align: middle;
+  }
+
+  
   
   .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) {
     width: 100%;
@@ -218,11 +240,14 @@
   }
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) p {
     font-size: 16px;
+    display: inline-block;
   }
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) h4 {
     color: #808184;
     font-size: 14px;
     font-weight: 400;
+    width: auto;
+    display: inline-block;
   }
 
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(3) {

@@ -13,7 +13,7 @@ modal.innerHTML =  '<div class="modal-content">'+
             '<input type="text" autocomplete="off" class="field-text formVal" name="email"/>'+
             '<label for="city" class="field-label">Select City</label>'+
             '<input type="text" autocomplete="off" class="field-text formVal" name="city"/>'+
-            '<label for="pan" class="field-label">PAN Card Number</label>'+
+            '<label for="pan" class="field-label">Country</label>'+
             '<input type="text" autocomplete="off" class="field-text formVal" name="pan"/>'+
             '<a class="form-button continue-btn">CONTINUE</a>'+
         '</div>'+
@@ -25,7 +25,7 @@ modal.innerHTML =  '<div class="modal-content">'+
             '<input type="text" autocomplete="off" class="field-text formVal" name="dob"/>'+
             '<div class="checkbox-block">'+
             '<input type="checkbox" class="field-checkbox formVal" name="vehicle1" value="terms & condition">'+
-            '<label for="dob" class="field-label">I agree to ICICI Bank <a href="#">Terms & Conditions</a> and <a href="#">Most Important Terms & Conditions</a></label>'+
+            '<label for="dob" class="field-label">I agree to VFS GLobal <a href="#">Terms & Conditions</a> and <a href="#">Most Important Terms & Conditions</a></label>'+
             '</div>'+
             '<a class="back-btn">Back</a>'+
             '<a class="form-button submit-btn">SUBMIT</a>'+

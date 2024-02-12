@@ -109,10 +109,9 @@ main .hero img {
 
 }
 .card-request-form .card-request-h2 {
-  color: #e68636;
+  color: #283c58;
   font-size: 2.488rem;
   line-height: 1.2;
-  font-weight: 700;
   margin: 15px 0;
 }
 .card-request-form .card-request-msg {
@@ -186,23 +185,64 @@ main .hero img {
 }
 .card-request-form .form-button {
   display: flex;
-  margin: 15px 0;
-  flex: 0 0 auto;
+  background-color: #dd0100;
+  color: #ffffff;
   border-style: solid;
-  border-width: 1px;
-  border-color: #e68636;
-  border-radius: 3px;
-  background-color: #e68636;
-  color: #fff;
+  border: 1px solid #dd0100;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  padding: 8px 16px;
-  font-size: .64rem;
-  width: min-content;
-  float: right;
+  width: fit-content;
   cursor: pointer;
+  padding: 7px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  margin-top: 15px;
+  float: right;
+  text-decoration: none;
 }
+
+
+
+/* Start - Global Page Style */
+main .global .hero {
+  position: relative;
+  padding: 0;
+  min-height: 300px;
+}
+
+main .global .hero picture {
+  float: initial;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+main .global .hero h1 {
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    margin-top: 5px;
+    max-width: 1400px;
+}
+main .global .hero h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  margin-top: 10%;
+}
+/* End - Global Page Style */
+
 
 @media (max-width: 1300px) {
   main .hero {

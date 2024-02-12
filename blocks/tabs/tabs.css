@@ -1,0 +1,214 @@
+
+
+.tabs-container {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 10px 0 !important;
+    margin-top: -10%;
+  }
+  .tabs-wrapper {
+    width: 100%;
+  }
+  
+  .tabs {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e5ea;
+    color: #0A0A0A;
+    padding: 3%;
+    border-radius: 0 10px 10px 10px;
+    position: relative;
+  }
+
+  .tabs .tabs-card-body {
+    width: auto;
+    color: #0A0A0A;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    text-align: inherit;
+    position: relative;
+  }
+  .tabs .tabs-card-body h3 {
+    width: auto;
+    display: inline-block;
+    color: #0A0A0A;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .tabs .tabs-card-body h4 {
+    display: inline-block;
+    color: #0A0A0A;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #e0e5ea;
+    border-radius: 5px;
+    padding: 12px 20px;
+    width: 100px;
+    text-align: left;
+    margin: 10px;
+    cursor: pointer;
+    margin: 15px;
+    box-sizing: content-box;
+  }
+  .tabs .tabs-card-body p {
+    width: auto;
+    display: inline-block;
+    color: #0A0A0A;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+    right: 35px;
+  }
+  .tabs .tabs-card-body img {
+    width: auto;
+    height: 6px;
+  }
+  .tabs .tabs-card-image {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+  }
+  
+
+  
+  .tabs .tabs-card-body form {
+    width: 50%;
+    margin: 20px auto;
+  }
+  .tabs .tabs-card-body form input {
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+  .tabs .tabs-card-body form button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 10px;
+    outline: none;
+  }
+
+
+  
+  
+  
+    .tabs h2 {
+      color: #0A0A0A;
+      height: auto;
+      line-height: normal;
+      margin: 0;
+      text-transform: none;
+      white-space: normal;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: initial;
+      padding: 0;
+    }
+    .tabs p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 0;
+      color: #0A0A0A;
+    }
+    
+    .tabs a.button {
+        background-color: transparent;
+        color: #e86020;
+        border-style: solid;
+        border: 1px solid #e86020;
+        text-align: center;
+        text-transform: capitalize;
+        width: fit-content;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    
+    .tabs > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      background: #fff;
+        box-shadow: 0px 3px 8px rgba(3,27,48,0.1);
+        border-bottom: 3px solid #e86020;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+    
+    .tabs > ul > li {
+      border: none;
+      background-color: transparent;
+      position: relative;
+      display: block;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .tabs > ul > li:nth-child(1) {
+        text-align: left;
+        position: absolute;
+        left: -1px;
+        top: -45px;
+        z-index: 11;
+    }
+
+    .tabs > ul > li:nth-child(1) > .tabs-card-body {
+        text-align: left;
+        z-index: 11;
+        padding: 10px 20px;
+        color: #283C58;
+        height: auto;
+        line-height: normal;
+        margin: 0;
+        text-transform: none;
+        white-space: normal;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: initial;
+        cursor: pointer;
+        border-right: 1px solid #e0e5ea;
+        border-bottom: 1px solid #e0e5ea;
+    }
+    .tabs > ul > li:nth-child(1) > .tabs-card-body:nth-child(1) {
+        background-color: #f8f9fa;
+        border-top: 2px solid #e86020;
+        border-bottom: 1px solid #f8f9fa;
+    }
+  
+    
+    .tabs > ul > li img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    
+    
+    @media (max-width: 1300px) {
+      .tabs-container {
+        padding: 0 25px !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .tabs h2 {
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 600px) {
+      .tabs > ul > li { 
+        width: 100%;
+        display: inline-block;
+        padding: 1%;
+        box-sizing: border-box;
+      }
+    }
