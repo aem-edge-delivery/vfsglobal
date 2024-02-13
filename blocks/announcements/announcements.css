@@ -208,7 +208,7 @@
     cursor: pointer;
   }
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(1) p img {
-    width: 32px;
+    width: 40px;
     height: auto;
   }
 
@@ -260,7 +260,6 @@
     border-style: solid;
     border: 1px solid #dd0100;
     text-align: center;
-    text-transform: uppercase;
     width: fit-content;
     cursor: pointer;
     padding: 10px 25px;
