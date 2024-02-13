@@ -37,7 +37,7 @@
   
   
   .announcements .announcements-card-body table:nth-child(1) {
-    width: 55%;
+    width: 46%;
     display: inline-block;
     box-sizing: border-box;
     float: left;
@@ -45,7 +45,7 @@
     text-align: left;
   }
   .announcements .announcements-card-body table:nth-child(2) {
-    width: 40%;
+    width: 52%;
     display: inline-block;
     box-sizing: border-box;
     float: right;
