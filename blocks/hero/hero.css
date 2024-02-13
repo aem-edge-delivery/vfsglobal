@@ -11,7 +11,7 @@ main .hero-container {
 main .hero {
   position: relative;
   padding: 50px 10%;
-  min-height: 550px;
+  min-height: 500px;
 }
 
 main .hero h1 {

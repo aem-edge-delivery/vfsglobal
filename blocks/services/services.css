@@ -2,6 +2,7 @@
 .services-container {
   text-align: center;
   display: grid;
+  padding-top: 10px !important;
 }
 
 .services-container h2 {
