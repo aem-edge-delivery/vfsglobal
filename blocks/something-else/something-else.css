@@ -2,7 +2,7 @@
 .something-else-container {
     text-align: center;
     display: grid;
-    margin: 2% 0;
+    margin-top: -125px;
   }
   
   .something-else-container h2 {
