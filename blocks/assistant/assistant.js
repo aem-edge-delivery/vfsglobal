@@ -21,7 +21,7 @@ export default function decorate(block) {
 //assistant-card-body
 
 let form = document.createElement("form");
-form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search" class="searchbox" autocomplete="off"><button type="button" class="search-btn">Go</button>';
+form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search" class="searchbox" autocomplete="off"><div class="search-img"></div>';
 document.getElementsByClassName("assistant")[0].getElementsByTagName("h2")[0].parentElement.appendChild(form);
 
 

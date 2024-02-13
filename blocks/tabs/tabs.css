@@ -117,8 +117,8 @@
     }
     
     .tabs a.button {
-        background-color: transparent;
-        color: #e86020;
+        background-color: #e86020;
+        color: #ffffff;
         border-style: solid;
         border: 1px solid #e86020;
         text-align: center;

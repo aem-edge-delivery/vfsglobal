@@ -130,16 +130,6 @@ async function loadLazy(doc) {
 }
 
 
-setTimeout(() => {
-  if (window.location.href.indexOf("/global") > -1) {
-    document.getElementsByTagName("header")[0].getElementsByTagName("img")[0].style.display = "none";
-    document.getElementsByTagName("header")[0].getElementsByTagName("img")[1].style.display = "block";
-  } else {
-    document.getElementsByTagName("header")[0].getElementsByTagName("img")[0].style.display = "block";
-    document.getElementsByTagName("header")[0].getElementsByTagName("img")[1].style.display = "none";
-  }
-}, 1000);
-
 /**
  * Loads everything that happens a lot later,
  * without impacting the user experience.

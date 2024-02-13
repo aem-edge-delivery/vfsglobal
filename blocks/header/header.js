@@ -91,23 +91,46 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
  */
 export default async function decorate(block) {
   // fetch nav content
+  // Differnt header / Different nav for home & global page
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta).pathname : '/nav';
+  let navPath;
+  if (window.location.href.indexOf("/global") > -1) {
+    console.log("global navMeta: ", navMeta);
+    navPath = navMeta ? new URL(navMeta).pathname : '/navglobal';
+  } else {
+    console.log("global navMeta: ", navMeta);
+    navPath = navMeta ? new URL(navMeta).pathname : '/nav';
+  }
   const resp = await fetch(`${navPath}.plain.html`);
+
 
   if (resp.ok) {
     const html = await resp.text();
-
+    let nav, classes=[];
+  
     // decorate nav DOM
-    const nav = document.createElement('nav');
-    nav.id = 'nav';
-    nav.innerHTML = html;
+    if (window.location.href.indexOf("/global") > -1) {
+      nav = document.createElement('nav');
+      nav.id = 'navglobal';
+      nav.innerHTML = html;
 
-    const classes = ['brand', 'sections', 'tools'];
-    classes.forEach((c, i) => {
-      const section = nav.children[i];
-      if (section) section.classList.add(`nav-${c}`);
-    });
+      classes = ['global','brand', 'sections', 'tools'];
+      classes.forEach((c, i) => {
+        const section = nav.children[i];
+        if (section) section.classList.add(`nav-${c}`);
+      });
+    } else {
+      nav = document.createElement('nav');
+      nav.id = 'nav';
+      nav.innerHTML = html;
+
+      classes = ['brand', 'sections', 'tools'];
+      classes.forEach((c, i) => {
+        const section = nav.children[i];
+        if (section) section.classList.add(`nav-${c}`);
+      });
+    }
+    
 
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
