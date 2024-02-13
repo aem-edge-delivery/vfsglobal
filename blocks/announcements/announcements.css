@@ -52,7 +52,7 @@
     background-color: #003060;
     border-radius: 20px 0 0 20px;
     padding: 30px;
-    overflow: auto;
+    overflow: hidden;
   }
   
   .announcements .announcements-card-body table:nth-child(2) tr {
