@@ -19,7 +19,7 @@ main .hero h1 {
   max-width: 525px;
   margin-right: auto;
   color: #283c58;
-  margin-top: 15%;
+  margin-top: 12%;
   margin-bottom: 15px;
 }
 main .hero h1 strong {
@@ -54,7 +54,7 @@ main .hero picture {
   position: relative;
   float: right;
   width: 48%;
-  margin-top: -10%;
+  margin-top: -6%;
 }
 
 main .hero img {
