@@ -184,7 +184,8 @@
     margin: 10px 0;
   }
   .announcements .announcements-card-body table:nth-child(1) tr td:nth-child(1) p img {
-    width: 261px;
+    width: auto;
+    height: 60px;
     vertical-align: middle;
   }
 
