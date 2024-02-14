@@ -38,18 +38,6 @@
     border: none;
     outline: none;
   }
-  .assistant .assistant-card-body form .search-img {
-    width: 45px;
-    height: 45px;
-    background: url("ai-assistant.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: inline-block;
-    border-radius: 40px;
-    vertical-align: bottom;
-    margin-left: 10px;
-  }
   .assistant .assistant-card-body form button {
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -78,7 +66,7 @@
   }
 
   .assistant .assistant-card-body form .answers-list {
-    width: 78%;
+    width: 85%;
     background-color: transparent;
     color: #ffffff;
     border: none;
@@ -103,21 +91,31 @@
       color: #ffffff;
       height: auto;
       line-height: normal;
-      margin: 0;
+      margin: auto;
       text-transform: none;
       white-space: normal;
       font-size: 30px;
       font-weight: 700;
       font-style: initial;
+      width: auto;
+      display: inline-block;
       padding: 0;
     }
     .assistant p {
       font-size: 16px;
       font-weight: 400;
-      margin: 10px 0;
+      margin: auto;
       color: #ffffff;
+      display: inline-block;
+      margin-right: 15px;
     }
-    
+    .assistant p img {
+      width: auto;
+      height: 30px;
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+
     .assistant a.button {
       background-color: #dd0100;
       color: #ffffff;
@@ -151,11 +149,26 @@
   
     
     .assistant > ul > li img {
-      width: 100%;
-      object-fit: cover;
+      width: auto;
+      height: 30px;
+      display: inline-block;
+      vertical-align: text-bottom;
     }
     
-    
+    /*
+  .assistant .assistant-card-body form .search-img {
+    width: 45px;
+    height: 45px;
+    background: url("ai-assistant.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: inline-block;
+    border-radius: 40px;
+    vertical-align: bottom;
+    margin-left: 10px;
+  }
+  */
     
     @media (max-width: 1300px) {
       .assistant-container {
