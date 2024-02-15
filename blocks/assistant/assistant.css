@@ -111,9 +111,9 @@
     }
     .assistant p img {
       width: auto;
-      height: 30px;
+      height: 35px;
       display: inline-block;
-      vertical-align: text-bottom;
+      vertical-align: bottom;
     }
 
     .assistant a.button {
@@ -150,9 +150,9 @@
     
     .assistant > ul > li img {
       width: auto;
-      height: 30px;
+      height: 35px;
       display: inline-block;
-      vertical-align: text-bottom;
+      vertical-align: bottom;
     }
     
     /*

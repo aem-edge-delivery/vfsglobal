@@ -226,6 +226,7 @@
 
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) td {
     width: 250px;
+    min-height: 250px;
     padding: 20px;
     display: inline-block;
     color: #0A0A0A;
