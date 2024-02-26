@@ -20,15 +20,25 @@ export default function decorate(block) {
 
 //assistant-card-body
 
-let form = document.createElement("form");
-form.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." name="search" class="searchbox" autocomplete="off">';
-document.getElementsByClassName("assistant")[0].getElementsByTagName("h2")[0].parentElement.appendChild(form);
+let searchBox = document.createElement("div");
+searchBox.setAttribute("class", "searchBox");
+searchBox.innerHTML = '<input type="text" placeholder="Got a question? Ask away here for instant answers from our website." class="searchbox" autocomplete="off">';
+document.getElementsByClassName("assistant")[0].getElementsByTagName("h2")[0].parentElement.appendChild(searchBox);
+document.getElementsByClassName("assistant")[0].getElementsByClassName("button")[0].setAttribute("target", "_blank");
 
 
+document.getElementsByClassName("searchbox")[0].addEventListener("keyup", function(event){
+  event.preventDefault();
 
-document.getElementsByClassName("searchbox")[0].addEventListener("keyup", function(){
-  console.log("in loadData");
+  if (event.keyCode === 13) {
+    console.log("in loadData", this.value);
+    let vfsUrl = "https://chat-dev01.vfsai.com/46d28c52057320ff13aae7d86fa13b22/stream-packman";
+    (this.value !== "")?vfsUrl=vfsUrl+"?question="+this.value:vfsUrl=vfsUrl;
+    window.open(vfsUrl,'_blank');
+  }
 
+
+  /*
   let form = document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0];
 
   if(form.getElementsByClassName("questions-list").length==0) {
@@ -74,6 +84,8 @@ document.getElementsByClassName("searchbox")[0].addEventListener("keyup", functi
   } else {
     document.getElementsByClassName("assistant")[0].getElementsByTagName("form")[0].getElementsByClassName("questions-list")[0].style.display = 'none';
   }
+
+  */
 
 });
 
