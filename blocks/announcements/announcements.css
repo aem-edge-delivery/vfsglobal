@@ -41,7 +41,7 @@
     display: inline-block;
     box-sizing: border-box;
     float: left;
-    padding: 50px 0;
+    padding: 10px 0;
     text-align: left;
   }
   .announcements .announcements-card-body table:nth-child(2) {
