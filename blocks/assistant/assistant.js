@@ -32,8 +32,8 @@ document.getElementsByClassName("searchbox")[0].addEventListener("keyup", functi
 
   if (event.keyCode === 13) {
     console.log("in loadData", this.value);
-    let vfsUrl = "https://chat-dev01.vfsai.com/46d28c52057320ff13aae7d86fa13b22/stream-packman";
-    (this.value !== "")?vfsUrl=vfsUrl+"?question="+this.value:vfsUrl=vfsUrl;
+    let vfsUrl = "https://chat-test01.vfsai.com/acf4ca7e2a98cd3763372fe1f76c581f";
+    (this.value !== "")?vfsUrl=vfsUrl+"/vfs-copilot?question="+this.value:vfsUrl=vfsUrl;
     window.open(vfsUrl,'_blank');
   }
 
