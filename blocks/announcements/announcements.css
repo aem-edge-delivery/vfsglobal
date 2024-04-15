@@ -87,7 +87,7 @@
   }
   
   
-  .announcements .announcements-card-body h1 {
+  .announcements .announcements-card-body #hello-there {
     font-size: 30px;
     font-weight: 600;
     font-style: initial;
