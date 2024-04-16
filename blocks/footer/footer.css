@@ -1,7 +1,7 @@
 footer {
   padding: 4rem 2rem;
   background-color: #003060;
-  color: #929497;
+  color: #ffffff;
   font-size: var(--body-font-size-s);
 }
 footer .footer {
@@ -17,7 +17,7 @@ footer .footer p:nth-child(1) {
   margin-bottom: 20px;
 }
 footer .footer a {
-  color: #929497;
+  color: #ffffff;
   text-decoration: none;
   outline: none;
 }

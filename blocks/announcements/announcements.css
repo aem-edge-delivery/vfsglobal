@@ -245,7 +245,7 @@
     display: inline-block;
   }
   .announcements .announcements-card-body table:nth-child(2) tr:nth-child(2) h4 {
-    color: #808184;
+    color: #0A0A0A;
     font-size: 14px;
     font-weight: 400;
     width: auto;
